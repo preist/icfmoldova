@@ -1,5 +1,5 @@
-# Frontend Starter
-A simple starter template for easy frontend design and development
+# ICF Moldova
+A simple starter for ICF Moldova
 
 ## How to start
 - `yarn install` or `npm install`

@@ -1,0 +1,9 @@
+section {
+  width: 100%;
+
+  .container {
+    max-width: $page-width;
+    @include grid-container;
+    margin: 0 auto;
+  }
+}

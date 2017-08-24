@@ -3,7 +3,40 @@
 // --------------------------
 
 $fa-font-path : "../fonts/font-awesome" !default;
-
-$brand-primary : #CCCCCC;
-
+$brand-primary : #333333;
 $body-bg-color : #DDDDDD;
+
+// Breakpoints
+$tiny-breakpoint: 420px;
+$small-breakpoint: 580px;
+$medium-breakpoint: 720px;
+$large-breakpoint: 960px;
+
+// Media queries
+$large: "only screen and (min-width: #{$large-breakpoint})";
+$medium: "only screen and (max-width: #{$medium-breakpoint})";
+$small: "only screen and (max-width: #{$small-breakpoint})";
+$tiny: "only screen and (max-width: #{$tiny-breakpoint})";
+
+// Neat settings
+$neat-grid: (
+  columns: 12,
+  gutter: 40px,
+);
+
+$small-grid: (
+  columns: 6,
+  gutter: 30px
+);
+
+$touching-grid: (
+  columns: 2,
+  gutter: 0
+);
+
+$page-width: 1080px;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #333333;
+$color-blue: #0D28FF;

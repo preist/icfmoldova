@@ -6,7 +6,7 @@
 
   var setCustomBgImg = function(el) {
     el = $(el);
-    var imgUrl = el.attr('data-background-image');
+    var imgUrl = el.data('background-image');
     imgUrl != "" && (imgUrl = "url(" + imgUrl + ")");
     el.css('background-image', imgUrl);
   };

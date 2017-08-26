@@ -1,6 +1,30 @@
 #who {
   .wrapper {
-    height: 500px;
-    background-color: #333333;
+    height: auto;
+    color: $color-white;
+    background-color: $color-black;
+    padding-top: 140px;
+    padding-bottom: 120px;
+
+    .text-content {
+      @include grid-column(10);
+      @include grid-shift(1);
+      @include clearfix;
+
+      h2 {
+        @include grid-column(12);
+        font-size: 36px;
+        letter-spacing: .1em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      p {
+        @include grid-column(6);
+        font-family: $playfair;
+        font-size: 20px;
+        line-height: 1.8;
+      }
+    }
   }
 }

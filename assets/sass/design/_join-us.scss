@@ -1,8 +1,8 @@
 #join-us {
+  @include grid-container;
   padding: 0;
   margin: 0;
   height: 0;
-  @include grid-container;
   position: relative;
 
   .wrapper {

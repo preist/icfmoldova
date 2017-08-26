@@ -2,6 +2,26 @@
 // Variables
 // --------------------------
 
+// Base fonts
+$raleway: (
+  "Raleway",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Roboto",
+  sans-serif,
+);
+
+$playfair: (
+  "Playfair Display",
+  "Hoefler Text",
+  "Baskerville Old Face",
+  "Garamond",
+  "Georgia",
+  "Times",
+  "Times New Roman",
+  serif,
+);
+
 $fa-font-path : "../fonts/font-awesome" !default;
 $brand-primary : #333333;
 $body-bg-color : #DDDDDD;
@@ -37,6 +57,7 @@ $touching-grid: (
 $page-width: 1080px;
 
 // Colors
+$color-beige: #F1F1ED;
 $color-white: #ffffff;
 $color-black: #333333;
-$color-blue: #0D28FF;
+$color-blue:  #0D28FF;

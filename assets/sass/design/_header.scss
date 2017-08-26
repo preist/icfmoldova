@@ -1,6 +1,7 @@
 #header {
-  .container {
+  .wrapper {
     background-color: rgba(255, 255, 255, .8);
+    padding: 40px 0 100px 0;
   }
 
   .logo-container,
@@ -9,32 +10,56 @@
   }
 
   .headline {
-    @include grid-shift(1);
-    @include grid-column(10);
+    @include grid-column(12);
+    text-align: center;
+
+    img {
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
   }
-}
 
-#header .logo {
-  float: left;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  .logo {
+    float: left;
+    margin-bottom: 40px;
 
-  a {
-    @include hide-text;
-    text-indent: 300%;
-    display: block;
-    height: 64px;
-    width: 150px;
-    background-image: url("../img/logo.svg");
+    a {
+      @include hide-text;
+      text-indent: 300%;
+      display: block;
+      height: 64px;
+      width: 150px;
+      background-image: url("../img/logo.svg");
+    }
   }
-}
 
-#header .social {
-  text-align: right;
-  padding: 40px 0;
-  line-height: 1.4;
+  .social {
+    text-align: right;
+    line-height: 1.4;
 
-  .connect {
-    padding: 15px 5px;
+    a,
+    a:link,
+    a:visited {
+      color: #333333;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: underline;
+    }
+
+    .connect {
+      padding: 20px 5px;
+    }
+  }
+
+  .description {
+    @include grid-column(12);
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

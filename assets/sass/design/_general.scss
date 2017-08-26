@@ -1,14 +1,9 @@
 body {
-  padding: 0;
+  padding: 20px;
   margin: 0;
-  background-color: #ffffff;
-}
-
-.background-image-wrapper {
-  width: 100%;
-  min-height: 1000px;
+  background-color: $color-beige;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: contain;
+  background-size: cover;
 }

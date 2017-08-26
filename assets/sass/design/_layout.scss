@@ -1,7 +1,7 @@
 section {
   width: 100%;
 
-  .container {
+  .wrapper {
     max-width: $page-width;
     @include grid-container;
     margin: 0 auto;

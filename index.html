@@ -81,7 +81,7 @@
         </div>
 
         <div class="information">
-          <p class="intro">We meet on Sundays at 4:30pm</p>
+          <p class="intro">We meet on <strong>Sundays</strong> <br /> at <strong>4:30pm</strong></p>
 
           <h5>Features:</h5>
 
@@ -106,11 +106,53 @@
           </div>
         </div>
 
+        <div class="photos">
+          <div class="slider">
+            <div>
+              <img src="assets/img/photos/01.jpg" alt="Example photo">
+            </div>
+            <div>
+              <img src="assets/img/photos/02.jpg" alt="Example photo">
+            </div>
+            <div>
+              <img src="assets/img/photos/03.jpg" alt="Example photo">
+            </div>
+          </div>
+
+          <div class="slider-controls"></div>
+        </div>
+
       </div>
     </section>
 
+    <section id="map">
+      <div class="wrapper">
+        <div class="header">
+          <h4>Find Us on the Map</h4>
+        </div>
+
+        <div class="map" data-api-key="AIzaSyCBTBb-4Ja0NxPPtIoHQoehidQmkIq8EQY">
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
     <script src="assets/js/vendor/jquery/dist/jquery.min.js"></script>
+
+    <!-- Photo slider element -->
+    <!--[if (lt IE 9)]><script src="assets/js/vendor/slider/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <script src="assets/js/vendor/slider/min/tiny-slider.js"></script>
+    <script src="assets/js/photos.js"></script>
+
+    <!-- Google Maps element -->
+    <script src="assets/js/vendor/gmaps/gmaps.js"></script>
+    <script src="assets/js/map.js"></script>
+
+    <!-- SVG Fallback -->
     <script src="assets/js/svg-fallback.js"></script>
+
+    <!-- Helpers -->
     <script src="assets/js/scripts.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

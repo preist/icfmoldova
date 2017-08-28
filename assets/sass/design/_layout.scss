@@ -1,9 +1,11 @@
 section {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 
   .wrapper {
-    max-width: $page-width;
     @include grid-container;
+    max-width: $page-width;
     margin: 0 auto;
   }
 }

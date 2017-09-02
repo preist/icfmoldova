@@ -17,13 +17,15 @@
       font-size: 24px;
       padding-top: 40px;
       padding-bottom: 40px;
+      letter-spacing: .05em;
     }
 
     @media #{$small} {
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: none;
       padding-top: 30px;
       padding-bottom: 30px;
+      letter-spacing: none;
     }
 
     h3 {

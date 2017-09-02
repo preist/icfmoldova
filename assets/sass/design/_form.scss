@@ -15,16 +15,36 @@
     width: 100%;
     padding: 10px;
 
+    @media #{$medium} {
+      top: -45px;
+    }
+
+    @media #{$small} {
+      top: -35px;
+    }
+
     h3 {
       font-family: $playfair;
       font-size: 64px;
       text-transform: none;
       text-align: center;
+
+      @media #{$medium} {
+        font-size: 48px;
+      }
+
+      @media #{$small} {
+        font-size: 36px;
+      }
     }
   }
 
   .information {
     @include grid-column(6);
+
+    @media #{$medium} {
+      @include grid-column(12);
+    }
 
     .large {
       font-family: $playfair;
@@ -48,6 +68,10 @@
 
   .form {
     @include grid-column(6);
+
+    @media #{$medium} {
+      @include grid-column(12);
+    }
   }
 }
 

@@ -74,28 +74,36 @@
     }
 
     ul li {
-      font-size: 24px;
 
-      @media #{$medium} {
-        font-size: 20px;
-      }
+      i {
+        float: left;
+        font-size: 36px;
+        line-height: 1;
+        margin-right: 10px;
+        padding: 10px 0;
+        width: 40px;
+        text-align: left;
 
-      @media #{$small} {
-        font-size: 16px;
+        @media #{$medium} {
+          display: none;
+        }
       }
 
       a,
       a:link,
       a:visited {
+        font-size: 24px;
         display: block;
         padding: 10px 0;
         margin: 0;
 
         @media #{$medium} {
+          font-size: 20px;
           padding: 8px 0;
         }
 
         @media #{$small} {
+          font-size: 16px;
           padding: 6px 0;
         }
       }

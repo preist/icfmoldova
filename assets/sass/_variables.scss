@@ -41,17 +41,7 @@ $tiny: "only screen and (max-width: #{$tiny-breakpoint})";
 // Neat settings
 $neat-grid: (
   columns: 12,
-  gutter: 40px,
-);
-
-$small-grid: (
-  columns: 6,
-  gutter: 30px
-);
-
-$touching-grid: (
-  columns: 2,
-  gutter: 0
+  gutter: 20px,
 );
 
 $page-width: 1080px;

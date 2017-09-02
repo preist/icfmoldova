@@ -6,10 +6,25 @@
     padding-top: 140px;
     padding-bottom: 120px;
 
+    @media #{$medium} {
+      padding-top: 110px;
+      padding-bottom: 60px;
+    }
+
+    @media #{$small} {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
     .text-content {
       @include grid-column(10);
       @include grid-shift(1);
       @include clearfix;
+
+      @media #{$small} {
+        @include grid-shift(0);
+        @include grid-column(12);
+      }
 
       h2 {
         @include grid-column(12);
@@ -17,6 +32,12 @@
         letter-spacing: .1em;
         margin-bottom: 2em;
         text-align: center;
+
+        @media #{$medium} {
+          font-size: 24px;
+          letter-spacing: .05em;
+          margin-bottom: 1.6em;
+        }
       }
 
       p {
@@ -24,6 +45,20 @@
         font-family: $playfair;
         font-size: 20px;
         line-height: 1.8;
+
+        @media #{$medium} {
+          @include grid-column(12);
+          font-size: 18px;
+          margin-bottom: 1.6em;
+          text-align: center;
+        }
+
+        @media #{$small} {
+          @include grid-column(12);
+          font-size: 15px;
+          margin-bottom: 1.6em;
+          text-align: center;
+        }
       }
     }
   }

@@ -38,6 +38,12 @@
           letter-spacing: .05em;
           margin-bottom: 1.6em;
         }
+
+        @media #{$small} {
+          font-size: 22px;
+          letter-spacing: .05em;
+          margin-bottom: 1.6em;
+        }
       }
 
       p {

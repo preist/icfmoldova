@@ -112,6 +112,16 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media #{$medium} {
+            height: 10px;
+            width: 60px;
+        }
+
+        @media #{$small} {
+            height: 10px;
+            width: 40px;
+        }
     }
 }
 

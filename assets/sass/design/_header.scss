@@ -3,6 +3,16 @@
     background-color: rgba(255, 255, 255, .8);
     padding-top: 40px;
     padding-bottom: 100px;
+
+    @media #{$medium} {
+      padding-top: 30px;
+      padding-bottom: 80px;
+    }
+
+    @media #{$medium} {
+      padding-top: 20px;
+      padding-bottom: 80px;
+    }
   }
 
   .logo-container,
@@ -28,6 +38,10 @@
     float: left;
     margin-bottom: 40px;
 
+    @media #{$small} {
+      margin-bottom: 30px;
+    }
+
     a {
       @include hide-text;
       text-indent: 300%;
@@ -35,6 +49,15 @@
       height: 64px;
       width: 150px;
       background-image: url("../img/logo.svg");
+      background-size: 150px 64px;
+      background-position: top left;
+      background-repeat: no-repeat;
+
+      @media #{$medium} {
+        height: 50px;
+        width: 118px;
+        background-size: 118px 50px;
+      }
     }
   }
 
@@ -57,6 +80,16 @@
 
     .connect {
       padding: 20px 5px;
+
+      @media #{$small} {
+        padding: 15px 0;
+      }
+    }
+
+    @media #{$small} {
+      .hide-on-small {
+        display: none;
+      }
     }
   }
 

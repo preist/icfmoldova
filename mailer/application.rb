@@ -1,10 +1,10 @@
 require "rubygems"
 require "bundler/setup"
 require "sinatra"
+
 require File.join(File.dirname(__FILE__), "environment")
 
 configure do
-  set :views, "#{File.dirname(__FILE__)}/views"
   set :show_exceptions, :after_handler
 end
 
@@ -17,5 +17,13 @@ helpers do
 end
 
 get "/" do
-  "It works"
+  content_type :json
+
+  { works: true }.to_json
+end
+
+post '/mail' do
+  content_type :json
+
+  { "post": "mail" }.to_json
 end

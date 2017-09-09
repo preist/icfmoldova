@@ -21,7 +21,7 @@ class Mailer
   end
 
   def contact_form_email(details)
-    @to           = details[:to] || ENV["SENDGRID_TO"] || "hello@icfmoldova.com"
+    @to           = details[:to] || ENV["CONTACT_TO"] || "hello@icfmoldova.com"
     @from         = details[:email] || details[:from] || "undisclosed"
     @name         = details[:name]
     @message      = details[:message] || "No message was sent."

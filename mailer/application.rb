@@ -18,11 +18,11 @@ whitelist = ENV['WHITELIST'].split
 
 set :protection, :origin_whitelist => whitelist
 
-get "/" do
+get "/mailer" do
   "Mail server is working properly."
 end
 
-post '/contact' do
+post '/mailer/conact' do
   content_type :json
 
   form_data = {

@@ -31,11 +31,7 @@ node_modules/
 .DS_Store
 
 # Ignore logs
-/log
 *.log
-
-# Templorary files
-tmp/
 
 # Environment Variables
 .env

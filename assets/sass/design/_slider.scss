@@ -18,7 +18,11 @@
         -ms-scroll-snap-points-x: snapInterval(0%, 100%);
 
         // Defines the y and x intervals to snap to when scrolling.
-   
+    }
+
+    button[data-action="stop"],
+    button[data-action="start"] {
+        display: none;
     }
 }
 
@@ -91,7 +95,7 @@
         vertical-align: middle;
         display: inline-block;
         height: 10px;
-        width: 80px;
+        width: 60px;
         border-radius: 0;
         margin-right: 10px;
         outline: 0;
@@ -115,7 +119,7 @@
 
         @media #{$medium} {
             height: 10px;
-            width: 60px;
+            width: 50px;
         }
 
         @media #{$small} {

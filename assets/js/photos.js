@@ -5,7 +5,7 @@ var slider = tns({
   items: 1,
   mode: 'carousel',
   controls: false,
-  autoplay: false,
+  autoplay: true,
   nav: true,
   arrowKeys: true,
   autoplayHoverPause: true,

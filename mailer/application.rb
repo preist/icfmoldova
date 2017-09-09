@@ -22,7 +22,7 @@ get "/mailer" do
   "Mail server is working properly."
 end
 
-post '/mailer/conact' do
+post '/mailer/contact' do
   content_type :json
 
   form_data = {

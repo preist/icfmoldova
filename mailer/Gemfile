@@ -12,6 +12,9 @@ gem 'mail', '~> 2.6', '>= 2.6.6'
 gem 'pony', '~> 1.11'
 gem 'akismet', '~> 2.0'
 
+# Server
+gem 'unicorn', '~> 5.1'
+
 group :development do
   gem 'foreman'
 end

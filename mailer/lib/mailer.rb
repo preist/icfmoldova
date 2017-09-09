@@ -22,7 +22,7 @@ class Mailer
 
   def contact_form_email(details)
     @to           = details[:to] || ENV["SENDGRID_TO"] || "hello@icfmoldova.com"
-    @from         = details[:from]
+    @from         = details[:email] || details[:from] || "undisclosed"
     @name         = details[:name]
     @message      = details[:message] || "No message was sent."
     @ip           = details[:ip] || "Unknown"

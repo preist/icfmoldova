@@ -21,22 +21,25 @@ class Mailer
 end
 
 # Needed my Mail to send our email
-options = { :via_options           => {
-              :address              => "smtp.gmail.com",
-              :port                 => 587,
-              :user_name            => 'heynsd@gmail.com',
-              :password             => 'password',
-              :authentication       => 'plain',
-              :enable_starttls_auto => true
-              },
-            :via                  => :smtp }
+options = {
+  :via => :smtp,
+  :via_options => {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :domain => ENV['SENDGRID_DOMAIN'],
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+}
 
 mailer = Mailer.new(options)
 
 # This is a Hash that will be passed to the awesome_email method
-details = { to: 'deon@deonheyns.com',
-            from: 'heynsd@gmail.com',
-            subject: 'Welcome to awesome!',
+details = { to: 'hello@icfmoldova.com',
+            from: 'hello@icfmoldova.com',
+            subject: 'Welcome to this awesome email!',
             template_path: 'views/contact.html.erb' }
 
 

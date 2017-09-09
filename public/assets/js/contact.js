@@ -30,7 +30,7 @@
                .addClass("submit-success form-reset");
 
         new Noty({
-          text: "Thank you!",
+          text: "Thanks for getting in touch!",
           theme: 'icf',
           timeout: 2000,
           progressBar: false,
@@ -40,7 +40,7 @@
         }).show();
 
         // Change the state
-        window.history.pushState('submitFailure', 'Thank you for submitting!', '?submit="true"');
+        window.history.pushState('submitFailure', 'Thanks for getting in touch!', '?submit="true"');
       },
       error: function() {
         $(form).addClass("submit-failure");

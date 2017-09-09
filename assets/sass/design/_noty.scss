@@ -861,22 +861,22 @@
 }
 
 .noty_theme__icf.noty_type__warning {
-    background-color: #FA6800;
-    color: #fff;
+    background-color: $color-yellow;
+    color: $color-white;
 }
 
 .noty_theme__icf.noty_type__error {
-    background-color: #CE352C;
-    color: #FFF;
+    background-color: $color-red;
+    color: $color-white;
 }
 
 .noty_theme__icf.noty_type__info,
 .noty_theme__icf.noty_type__information {
-    background-color: #1BA1E2;
-    color: #FFF;
+    background-color: $color-blue;
+    color: $color-white;
 }
 
 .noty_theme__icf.noty_type__success {
-    background-color: #60A917;
-    color: #fff;
+    background-color: $color-blue;
+    color: $color-white;
 }

@@ -1,0 +1,110 @@
+#service {
+  .wrapper {
+    background-color: rgba(255, 255, 255, .95);
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .header {
+    @include grid-column(12);
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: .15em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media #{$medium} {
+      font-size: 24px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      letter-spacing: .05em;
+    }
+
+    @media #{$small} {
+      font-size: 18px;
+      letter-spacing: none;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      letter-spacing: none;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .information {
+    @include grid-column(5);
+    float: left;
+
+    @media #{$small} {
+      @include grid-column(12);
+    }
+
+    p.intro {
+      font-family: $playfair;
+      font-size: 28px;
+      margin-top: -14px;
+
+      @media #{$medium} {
+        font-size: 22px;
+        margin-top: -10px;
+      }
+
+       @media #{$small} {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+
+    .link {
+      margin-top: 10px;
+
+      a,
+      a:link,
+      a:visited {
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: underline;
+      }
+    }
+
+    h4, h5 {
+      font-size: 20px;
+      letter-spacing: .15em;
+      margin-top: 40px;
+      text-align: left;
+
+      @media #{$small} {
+        font-size: 18px;
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+
+    @media #{$small} {
+      text-align: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .photos {
+    @include grid-column(7);
+    float: right;
+
+    margin-bottom: 40px;
+
+    @media #{$small} {
+      @include grid-column(12);
+    }
+  }
+}

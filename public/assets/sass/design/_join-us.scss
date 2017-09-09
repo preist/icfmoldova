@@ -1,0 +1,49 @@
+#join-us {
+  @include grid-container;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  position: relative;
+
+  .wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .absolute-position {
+    width: 100%;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+
+    @media #{$medium} {
+      bottom: -34px;
+    }
+
+    @media #{$medium} {
+      bottom: -30px;
+    }
+  }
+
+  .text {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #D4B966;
+    display: inline-block;
+    padding: 24px 50px;
+    float: none;
+
+    @media #{$medium} {
+      font-size: 18px;
+      padding: 20px 40px 18px 40px;
+    }
+
+    @media #{$small} {
+      font-size: 15px;
+      padding: 20px 20px 18px 20px;
+    }
+  }
+}

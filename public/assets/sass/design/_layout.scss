@@ -1,0 +1,23 @@
+section {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .wrapper {
+    @include grid-container;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: $page-width;
+    margin: 0 auto;
+
+    @media #{$medium} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+     @media #{$small} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

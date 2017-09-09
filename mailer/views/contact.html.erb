@@ -1,7 +1,58 @@
-Message from contact form on http://www.icfmoldova.com 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-From: <%= @naem %>
-Email: <%= @email %>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@subject</title>
+    <style type="text/css">
+    body {
+        text-align: center;
+    }
 
-Message:
-<%= @message %>
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .contacts {
+        margin-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Contact Form Email</h1>
+        <p>
+            Message from contact form on http://www.icfmoldova.com
+        </p>
+    </div>
+    <hr />
+    <div class="contacts">
+        <span class="key">Name:</span> <span class="value"><%= @name %></span>
+        <br />
+        <span class="key">Email:</span> <span class="value"><%= @from %></span>
+        <br />
+    </div>
+    <br />
+    <br />
+    <div class="message">
+        <h5>Message:</h5>
+        <p>
+            <%= @message %>
+        </p>
+    </div>
+    <div class="footer">
+        <p>Sent from ip:
+            <%= @ip %>
+        </p>
+    </div>
+    <br />
+    <br />
+</body>
+
+</html>

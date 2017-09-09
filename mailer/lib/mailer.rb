@@ -16,34 +16,26 @@ class Mailer
     }
   }
 
-  def initialize(options)
-   Pony.options = options
+  def initialize
+   Pony.options = OPTIONS
   end
 
   def contact_form_email(details)
     @to           = details[:to] || ENV["SENDGRID_TO"] || "hello@icfmoldova.com"
     @from         = details[:from]
-    @messsage     = details[:message] || "No message was sent."
-    subject       = details[:subject] || "Welcome to this awesome email!"
+    @name         = details[:name]
+    @message      = details[:message] || "No message was sent."
+    @ip           = details[:ip] || "Unknown"
+    @subject      = details[:subject] || "Website Contact Form: #{@name} (#{@from})"
     template_path = "views/contact.html.erb"
     
     # Using instance variables inside the text message
     context = binding
     body = ERB.new(File.read(template_path)).result(context)
 
-    Pony.mail(:to => @to, :from => @from, :subject => subject, :html_body => body)
+    Pony.mail(:to => @to, :from => @from, :subject => @subject, :html_body => body)
   end
 end
 
-
-
-mailer = Mailer.new(options)
-
-# This is a Hash that will be passed to the awesome_email method
-details = { to: '',
-            from: 'hello@icfmoldova.com',
-            subject: '',
-            template_path: '' }
-
-
-mailer.sendmail(details)
+# mailer = Mailer.new()
+# mailer.sendmail(details)

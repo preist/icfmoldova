@@ -14,22 +14,11 @@ configure :production, :development do
 end
 
 # whitelist should be a space separated list of URLs
-whitelist = ENV['whitelist'].split
+whitelist = ENV['WHITELIST'].split
 
 set :protection, :origin_whitelist => whitelist
 
-Pony.options = {
-  :via => :smtp,
-  :via_options => {
-    :address => 'smtp.sendgrid.net',
-    :port => '587',
-    :domain => ENV['SENDGRID_DOMAIN'],
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
-}
+
 
 get "/" do
   content_type :json
@@ -38,7 +27,18 @@ get "/" do
 end
 
 post '/contact' do
-  content_type :json
+  email = ""
 
-  { "post": "mail" }.to_json
+  params.each do |value|
+    email += "#{value[0]}: #{value[1]}\n"
+  end
+
+  Pony.mail(
+    :to => ENV['email_recipients'],
+    :from => 'noreply@example.com',
+    :subject => 'New Contact Form',
+    :body => email
+  )
+
+  { "email": email }.to_json
 end

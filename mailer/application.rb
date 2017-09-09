@@ -39,10 +39,4 @@ post '/contact' do
     success: "Thank you, we'll get in touch with you!",
     status: 200
   }.to_json
-
-rescue StandardError => e
-  {
-    failure: "Something went wrong",
-    status: 500
-  }.to_json
 end

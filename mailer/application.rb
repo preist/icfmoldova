@@ -18,27 +18,31 @@ whitelist = ENV['WHITELIST'].split
 
 set :protection, :origin_whitelist => whitelist
 
-
-
 get "/" do
-  content_type :json
-
-  { works: true }.to_json
+  "Mail server is working properly."
 end
 
 post '/contact' do
-  email = ""
+  content_type :json
 
-  params.each do |value|
-    email += "#{value[0]}: #{value[1]}\n"
-  end
+  form_data = {
+    from: params[:from],
+    name: params[:name],
+    message: params[:message],
+    ip: request.ip
+  }
 
-  Pony.mail(
-    :to => ENV['email_recipients'],
-    :from => 'noreply@example.com',
-    :subject => 'New Contact Form',
-    :body => email
-  )
+  mailer = Mailer.new()
+  mailer.contact_form_email(form_data)
 
-  { "email": email }.to_json
+  {
+    success: "Thank you, we'll get in touch with you!",
+    status: 200
+  }.to_json
+
+rescue StandardError => e
+  {
+    failure: "Something went wrong",
+    status: 500
+  }.to_json
 end

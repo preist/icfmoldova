@@ -26,7 +26,7 @@ post '/mailer/contact' do
   content_type :json
 
   form_data = {
-    from: params[:from],
+    from: params[:email],
     name: params[:name],
     message: params[:message],
     ip: request.ip

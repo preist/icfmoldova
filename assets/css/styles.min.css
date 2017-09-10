@@ -65,7 +65,7 @@ section .wrapper::after{clear:both;content:"";display:block}
 #header .logo-container,#header .social{width:calc(50% - 30px);float:left;margin-left:20px}
 #header .headline{width:calc(100% - 40px);float:left;margin-left:20px;text-align:center}
 #header .headline img{max-width:800px;margin-bottom:20px}#header .logo{float:left;margin-bottom:40px}
-#header .logo a{overflow:hidden;text-indent:101%;white-space:nowrap;text-indent:300%;display:block;height:64px;width:150px;background-image:url("../img/logo.svg");background-size:150px 64px;background-position:top left;background-repeat:no-repeat}
+#header .logo a{overflow:hidden;text-indent:101%;white-space:nowrap;text-indent:300%;display:block;height:64px;width:150px;background-image:url("../img/logo-black.svg");background-size:150px 64px;background-position:top left;background-repeat:no-repeat}
 #header .social{text-align:right;line-height:1.4}#header .social a,#header .social a:link,#header .social a:visited{color:#333;font-weight:normal;text-decoration:none}
 #header .social a:hover,#header .social a:active{text-decoration:underline}#header .social .connect{padding:20px 5px}
 #header .description{width:calc(100% - 40px);float:left;margin-left:20px;font-size:24px;line-height:1.6;text-align:center;margin-bottom:20px}

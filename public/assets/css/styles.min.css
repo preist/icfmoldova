@@ -53,7 +53,7 @@ section .wrapper::after{clear:both;content:"";display:block}
 .tns-horizontal.tns-no-subpixel .tns-item{float:left;margin-right:-100%}.tns-no-calc{position:relative;left:0}
 .tns-gallery{position:relative;left:0}.tns-gallery .tns-item{position:absolute;left:-100%;-webkit-transition:opacity 0s;-webkit-transition:transform 0s,opacity 0s;-webkit-transition:opacity 0s,-webkit-transform 0s;transition:opacity 0s,-webkit-transform 0s;transition:transform 0s,opacity 0s;transition:transform 0s,opacity 0s,-webkit-transform 0s}
 .tns-nav{position:absolute;z-index:1;top:auto;left:0;right:0;bottom:20px;text-align:center}
-.tns-nav button{vertical-align:middle;display:inline-block;height:10px;width:60px;border-radius:0;margin-right:10px;outline:0;background-color:rgba(255,255,255,0.3)}
+.tns-nav button{vertical-align:middle;display:inline-block;height:10px;width:50px;border-radius:0;margin-right:10px;outline:0;background-color:rgba(255,255,255,0.3)}
 .tns-nav button:hover,.tns-nav button:active,.tns-nav button:focus{outline:0;background-color:#fff;box-shadow:none}
 .tns-nav button[aria-selected="true"]{background-color:rgba(255,255,255,0.8)}
 .tns-nav button:last-child{margin-right:0}.tns-lazy-img{-webkit-transition:opacity .6s;transition:opacity .6s;opacity:.6}
@@ -196,7 +196,7 @@ section .wrapper::after{clear:both;content:"";display:block}
 .noty_theme__icf.noty_type__info,.noty_theme__icf.noty_type__information{background-color:#0d28ff;color:#fff}
 .noty_theme__icf.noty_type__success{background-color:#0d28ff;color:#fff}@media all and (min-width:1px){.tns-mq-test{position:absolute}
 }@media only screen and (max-width:720px){section .wrapper{padding-left:15px;padding-right:15px}
-.tns-nav button{height:10px;width:50px}#header{padding-top:20px}#header .wrapper{padding-top:30px;padding-bottom:80px}
+.tns-nav button{height:10px;width:40px}#header{padding-top:20px}#header .wrapper{padding-top:30px;padding-bottom:80px}
 #header .wrapper{padding-top:20px;padding-bottom:60px}#header .headline img{max-width:100%}
 #header .logo a{height:50px;width:118px;background-size:118px 50px}#header .description{font-size:20px}
 #join-us .absolute-position{bottom:-34px}#join-us .absolute-position{bottom:-30px}
@@ -212,7 +212,7 @@ section .wrapper::after{clear:both;content:"";display:block}
 #contact textarea,#contact input{font-size:22px;padding:15px 0}#contact button{font-size:20px;padding:20px 30px}
 #contact .form-action{text-align:center}#footer .madeby{font-size:18px;padding:60px 0}
 }@media only screen and (max-width:580px){section .wrapper{padding-left:0;padding-right:0}
-.tns-nav button{height:10px;width:40px}#header .logo{margin-bottom:30px}#header .social .connect{padding:15px 0}
+.tns-nav button{height:10px;width:30px}#header .logo{margin-bottom:30px}#header .social .connect{padding:15px 0}
 #header .social .hide-on-small{display:none}#header .description{font-size:16px}#join-us .text{font-size:15px;padding:20px 20px 18px 20px}
 #who .wrapper{padding-top:100px;padding-bottom:50px}#who .wrapper .text-content{left:calc(0% - 20px + 20px);position:relative;width:calc(100% - 40px);float:left;margin-left:20px}
 #who .wrapper .text-content h2{font-size:22px;letter-spacing:0;margin-bottom:1.6em}
